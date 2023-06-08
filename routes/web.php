@@ -23,12 +23,20 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::prefix('prototype')->name('prototype.')->group(function () {
+    //route login
     route::get('/login', function () {
         return Inertia::render('Prototype/Login');
     })->name('login');
+
+    //route register
     route::get('/register', function () {
         return Inertia::render('Prototype/Register');
     })->name('register');
+
+    //route dashboard
+    route::get('/dashboard', function () {
+        return Inertia::render('Prototype/Dashboard');
+    })->name('dashboard');
 });
 
 
