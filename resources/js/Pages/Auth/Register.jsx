@@ -65,7 +65,10 @@ export default function Register() {
                                         }
                                         required
                                     />
-                                    <InputError message={errors.name} />
+                                    <InputError
+                                        message={errors.name}
+                                        className="mt-2"
+                                    />
                                 </div>
                                 <div>
                                     <InputLabel
@@ -82,7 +85,10 @@ export default function Register() {
                                         }
                                         required
                                     />
-                                    <InputError message={errors.email} />
+                                    <InputError
+                                        message={errors.email}
+                                        className="mt-2"
+                                    />
                                 </div>
                                 <div>
                                     <InputLabel
@@ -99,7 +105,10 @@ export default function Register() {
                                         }
                                         required
                                     />
-                                    <InputError message={errors.password} />
+                                    <InputError
+                                        message={errors.password}
+                                        className="mt-2"
+                                    />
                                 </div>
                                 <div>
                                     <InputLabel
@@ -122,6 +131,7 @@ export default function Register() {
 
                                     <InputError
                                         message={errors.password_confirmation}
+                                        className="mt-2"
                                     />
                                 </div>
                             </div>
