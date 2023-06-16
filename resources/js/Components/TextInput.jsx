@@ -9,7 +9,6 @@ forwardRef.propTypes = {
     className: PropTypes.string,
     variant: PropTypes.oneOf(["primary", "error", "primary-outline"]),
     autoComplete: PropTypes.string,
-    required: PropTypes.bool,
     isFocused: PropTypes.bool,
     handleChange: PropTypes.func,
     placeholder: PropTypes.string,
@@ -24,11 +23,9 @@ export default forwardRef(function TextInput(
         defaultValue,
         variant = "primary",
         autoComplete,
-        required,
         className = "",
         isFocused,
         handleChange,
-        placeholder,
         isError,
         ...props
     },
@@ -54,9 +51,6 @@ export default forwardRef(function TextInput(
             } input-${variant} ${className}`}
             ref={input}
             autoComplete={autoComplete}
-            required={required}
-            onChange={(e) => handleChange(e)}
-            placeholder={placeholder}
         />
     );
 });
