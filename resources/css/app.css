@@ -58,3 +58,29 @@
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
+[type="text"],
+[type="email"],
+[type="url"],
+[type="password"],
+[type="number"],
+[type="date"],
+[type="datetime-local"],
+[type="month"],
+[type="search"],
+[type="tel"],
+[type="time"],
+[type="week"],
+[multiple],
+textarea,
+select {
+    --tw-border-opacity: 1;
+    border-color: rgb(251 105 8 / var(--tw-border-opacity));
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+[type="file"] {
+    --tw-border-opacity: 1;
+    border-color: rgb(251 105 8 / var(--tw-border-opacity));
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
