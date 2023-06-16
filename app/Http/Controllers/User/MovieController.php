@@ -9,7 +9,7 @@ use App\Models\Movie;
 class MovieController extends Controller
 {
     public function show(Movie $movie) {
-        return inertia('User/Movie/Show', [
+        return inertia('User/Dashboard/Movie/Show', [
             'movie' => $movie
         ]);
     }
