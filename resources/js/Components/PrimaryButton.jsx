@@ -6,7 +6,7 @@ PrimaryButton.propTypes = {
     variant: PropTypes.oneOf([
         "primary",
         "warning",
-        "danger",   
+        "danger",
         "light-outline",
         "white-outline",
     ]),
